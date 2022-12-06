@@ -64,6 +64,7 @@ target_id = module.Private_EC2_Creation.Private_EC2_Details.id
 
 ######################################################################################5
 
+/*
 
 module "Bastion_EC2_Creation"{
 source = "./Modules/3.1 Bastion_Public_EC2"
@@ -80,7 +81,6 @@ iam_instance_profile = module.EC2_Instance_Profile_IAM.s3_Full_Access_For_EC2_In
 
 }
 
-/*
 module "Private_DB_Creation"{
 source = "./Modules/3.3 Private_Database"
 subnet_id = module.Production_VPC.PRIVATE_SUBNET_ID_1.id
