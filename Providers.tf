@@ -18,7 +18,7 @@ terraform {
     encrypt = true    
     bucket = "production101bucket102"
     dynamodb_table = "PROD_TABLE"
-    key    = "terraform.tfstate"
+    key    = "EverythingEverywhere/terraform.tfstate"
     region = "ap-south-1"
   }
 }
