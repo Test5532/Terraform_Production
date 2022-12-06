@@ -58,7 +58,7 @@ depends_on = [module.Production_VPC]
 target_group_arn = module.Application_LoadBalancer_Target_Group.Application_Target_Group.arn
 target_id = module.Private_EC2_Creation.Private_EC2_Details.id
 }
-
+*/
 
 ######################################################################################5
 
@@ -80,7 +80,7 @@ iam_instance_profile = module.EC2_Instance_Profile_IAM.s3_Full_Access_For_EC2_In
 
 }
 
-
+/*
 module "Private_DB_Creation"{
 source = "./Modules/3.3 Private_Database"
 subnet_id = module.Production_VPC.PRIVATE_SUBNET_ID_1.id
